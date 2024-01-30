@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>My weather application</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="box">
+      <header>
+        <form>
+          <input
+            class="searchbar"
+            type="search"
+            placeholder="Enter a city..."
+            id="newCity"
+            required
+          />
+          <input
+            class="submit-button"
+            type="submit"
+            value="Search"
+            id="submit-button"
+          />
+        </form>
+      </header>
+      <hr />
+      <main>
+        <div class="current-weather">
+          <div>
+            <h1>Paris</h1>
+            <p>
+              <span id="current-date">Saturday 15:32</span>, moderate rain
+              <br />
+              Humidity: <strong id="humidity">87%</strong>, Wind:
+              <strong id="wind">7.2km/h</strong>
+            </p>
+          </div>
+          <div class="current-weather">
+            <span class="temperature-icon" id="weather-icon">☀️</span>
+            <span class="current-temperature" id="currentTemperature">14</span>
+            <span class="temperature-unit">°C</span>
+          </div>
+        </div>
+      </main>
+      <hr />
+      <footer>
+        <p>
+          This project was coded by
+          <a href="#" target="_blank">Naomi Mulyadhi</a> and is
+          <a href="#" target="_blank"> on GitHub</a> and
+          <a href="#" target="_blank">hosted on Netlify</a>
+        </p>
+      </footer>
+    </div>
+    <script src="src/index.jsx"></script>
+  </body>
+</html>
